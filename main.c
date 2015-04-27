@@ -40,7 +40,7 @@ void Usart() interrupt 4
 	else{
 	  DOOR=OPEN;
 	}
-	SBUF=receiveData;
+	//SBUF=receiveData;
 	while(!TI);		  //等待发送数据完成
 	TI=0;			  //清除发送完成标志位
 }
